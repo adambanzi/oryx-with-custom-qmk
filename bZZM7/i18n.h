@@ -1,2 +1,10 @@
-#define KC_PC_COPY LCTL(KC_C)
-#define KC_PC_PASTE LCTL(KC_V)
+#define BR_QUOT KC_GRV
+#define BR_BSLS KC_NUBS
+#define BR_TRMA S(KC_6)
+#define BR_ACUT KC_LBRC
+#define BR_GRAV S(KC_LBRC)
+#define BR_CCDL KC_SCLN
+#define BR_TILD KC_QUOT
+#define BR_SCLN KC_SLSH
+#define BR_SLSH KC_INT1
+#define BR_QUES S(KC_INT1)
