@@ -8,3 +8,7 @@
 #define BR_SCLN KC_SLSH
 #define BR_SLSH KC_INT1
 #define BR_QUES S(KC_INT1)
+#define BR_LBRC KC_RBRC
+#define BR_LCBR S(KC_RBRC)
+#define BR_RBRC KC_BSLS
+#define BR_RCBR S(KC_BSLS)
