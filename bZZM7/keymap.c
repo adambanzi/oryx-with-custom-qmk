@@ -143,97 +143,95 @@ bool rgb_matrix_indicators_user(void) {
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-	
-unsigned short int macro_delay = 50;
-	
+		
   switch (keycode) {
     case ST_MACRO_0:
     if (record->event.pressed) {
-	// 21086885
-      SEND_STRING(SS_TAP(X_2) SS_DELAY(macro_delay) SS_TAP(X_1) SS_DELAY(macro_delay) SS_TAP(X_0) SS_DELAY(macro_delay) SS_TAP(X_8) SS_DELAY(macro_delay) SS_TAP(X_6) SS_DELAY(macro_delay) SS_TAP(X_8) SS_DELAY(macro_delay) SS_TAP(X_8) SS_DELAY(macro_delay) SS_TAP(X_5));
+		// 21086885
+      SEND_STRING(SS_TAP(X_2) SS_DELAY(50) SS_TAP(X_1) SS_DELAY(50) SS_TAP(X_0) SS_DELAY(50) SS_TAP(X_8) SS_DELAY(50) SS_TAP(X_6) SS_DELAY(50) SS_TAP(X_8) SS_DELAY(50) SS_TAP(X_8) SS_DELAY(50) SS_TAP(X_5));
     }
     break;
     case ST_MACRO_1:
     if (record->event.pressed) {
-	// 47945
-      SEND_STRING(SS_TAP(X_4) SS_DELAY(macro_delay) SS_TAP(X_7) SS_DELAY(macro_delay) SS_TAP(X_9) SS_DELAY(macro_delay) SS_TAP(X_4) SS_DELAY(macro_delay) SS_TAP(X_5));
+		// 47945
+      SEND_STRING(SS_TAP(X_4) SS_DELAY(50) SS_TAP(X_7) SS_DELAY(50) SS_TAP(X_9) SS_DELAY(50) SS_TAP(X_4) SS_DELAY(50) SS_TAP(X_5));
     }
     break;
     case ST_MACRO_2:
     if (record->event.pressed) {
-	// adam.banzi@serpro.gov.br
-      SEND_STRING(SS_TAP(X_A) SS_DELAY(macro_delay) SS_TAP(X_D) SS_DELAY(macro_delay) SS_TAP(X_A) SS_DELAY(macro_delay) SS_TAP(X_M) SS_DELAY(macro_delay) SS_TAP(X_DOT) SS_DELAY(macro_delay) SS_TAP(X_B) SS_DELAY(macro_delay) SS_TAP(X_A) SS_DELAY(macro_delay) SS_TAP(X_N) SS_DELAY(macro_delay) SS_TAP(X_Z) SS_DELAY(macro_delay) SS_TAP(X_I) SS_DELAY(macro_delay) SS_LSFT(SS_TAP(X_2)) SS_DELAY(macro_delay) SS_TAP(X_S) SS_DELAY(macro_delay) SS_TAP(X_E) SS_DELAY(macro_delay) SS_TAP(X_R) SS_DELAY(macro_delay) SS_TAP(X_P) SS_DELAY(macro_delay) SS_TAP(X_R) SS_DELAY(macro_delay) SS_TAP(X_O) SS_DELAY(macro_delay) SS_TAP(X_DOT) SS_DELAY(macro_delay) SS_TAP(X_G) SS_DELAY(macro_delay) SS_TAP(X_O) SS_DELAY(macro_delay) SS_TAP(X_V) SS_DELAY(macro_delay) SS_TAP(X_DOT) SS_DELAY(macro_delay) SS_TAP(X_B) SS_DELAY(macro_delay) SS_TAP(X_R));
+		// adam.banzi@serpro.gov.br
+      SEND_STRING(SS_TAP(X_A) SS_DELAY(50) SS_TAP(X_D) SS_DELAY(50) SS_TAP(X_A) SS_DELAY(50) SS_TAP(X_M) SS_DELAY(50) SS_TAP(X_DOT) SS_DELAY(50) SS_TAP(X_B) SS_DELAY(50) SS_TAP(X_A) SS_DELAY(50) SS_TAP(X_N) SS_DELAY(50) SS_TAP(X_Z) SS_DELAY(50) SS_TAP(X_I) SS_DELAY(50) SS_LSFT(SS_TAP(X_2)) SS_DELAY(50) SS_TAP(X_S) SS_DELAY(50) SS_TAP(X_E) SS_DELAY(50) SS_TAP(X_R) SS_DELAY(50) SS_TAP(X_P) SS_DELAY(50) SS_TAP(X_R) SS_DELAY(50) SS_TAP(X_O) SS_DELAY(50) SS_TAP(X_DOT) SS_DELAY(50) SS_TAP(X_G) SS_DELAY(50) SS_TAP(X_O) SS_DELAY(50) SS_TAP(X_V) SS_DELAY(50) SS_TAP(X_DOT) SS_DELAY(50) SS_TAP(X_B) SS_DELAY(50) SS_TAP(X_R));
     }
     break;
     case ST_MACRO_3:
     if (record->event.pressed) {
-	// du08688
-      SEND_STRING(SS_TAP(X_D) SS_DELAY(macro_delay) SS_TAP(X_U) SS_DELAY(macro_delay) SS_TAP(X_0) SS_DELAY(macro_delay) SS_TAP(X_8) SS_DELAY(macro_delay) SS_TAP(X_6) SS_DELAY(macro_delay) SS_TAP(X_8) SS_DELAY(macro_delay) SS_TAP(X_8));
+		// du08688
+      SEND_STRING(SS_TAP(X_D) SS_DELAY(50) SS_TAP(X_U) SS_DELAY(50) SS_TAP(X_0) SS_DELAY(50) SS_TAP(X_8) SS_DELAY(50) SS_TAP(X_6) SS_DELAY(50) SS_TAP(X_8) SS_DELAY(50) SS_TAP(X_8));
     }
     break;
     case ST_MACRO_4:
     if (record->event.pressed) {
-	// home point l t enter
-      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(macro_delay) SS_TAP(X_P) SS_DELAY(macro_delay) SS_TAP(X_O) SS_DELAY(macro_delay) SS_TAP(X_I) SS_DELAY(macro_delay) SS_TAP(X_N) SS_DELAY(macro_delay) SS_TAP(X_T) SS_DELAY(macro_delay) SS_TAP(X_SPACE) SS_DELAY(macro_delay) SS_TAP(X_L) SS_DELAY(macro_delay) SS_TAP(X_SPACE) SS_DELAY(macro_delay) SS_TAP(X_T) SS_DELAY(macro_delay) SS_TAP(X_ENTER));
+		// home point l t enter
+      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(50) SS_TAP(X_P) SS_DELAY(50) SS_TAP(X_O) SS_DELAY(50) SS_TAP(X_I) SS_DELAY(50) SS_TAP(X_N) SS_DELAY(50) SS_TAP(X_T) SS_DELAY(50) SS_TAP(X_SPACE) SS_DELAY(50) SS_TAP(X_L) SS_DELAY(50) SS_TAP(X_SPACE) SS_DELAY(50) SS_TAP(X_T) SS_DELAY(50) SS_TAP(X_ENTER));
     }
     break;
     case ST_MACRO_5:
     if (record->event.pressed) {
-      SEND_STRING(SS_LALT(SS_TAP(X_LEFT_CTRL)) SS_DELAY(macro_delay) SS_LGUI(SS_TAP(X_ESCAPE)));
+      SEND_STRING(SS_LALT(SS_TAP(X_LEFT_CTRL)) SS_DELAY(50) SS_LGUI(SS_TAP(X_ESCAPE)));
     }
     break;
     case ST_MACRO_6:
     if (record->event.pressed) {
-	// home point l b enter
-      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(macro_delay) SS_TAP(X_P) SS_DELAY(macro_delay) SS_TAP(X_O) SS_DELAY(macro_delay) SS_TAP(X_I) SS_DELAY(macro_delay) SS_TAP(X_N) SS_DELAY(macro_delay) SS_TAP(X_T) SS_DELAY(macro_delay) SS_TAP(X_SPACE) SS_DELAY(macro_delay) SS_TAP(X_L) SS_DELAY(macro_delay) SS_TAP(X_SPACE) SS_DELAY(macro_delay) SS_TAP(X_B) SS_DELAY(macro_delay) SS_TAP(X_ENTER));
+		// home point l b enter
+      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(50) SS_TAP(X_P) SS_DELAY(50) SS_TAP(X_O) SS_DELAY(50) SS_TAP(X_I) SS_DELAY(50) SS_TAP(X_N) SS_DELAY(50) SS_TAP(X_T) SS_DELAY(50) SS_TAP(X_SPACE) SS_DELAY(50) SS_TAP(X_L) SS_DELAY(50) SS_TAP(X_SPACE) SS_DELAY(50) SS_TAP(X_B) SS_DELAY(50) SS_TAP(X_ENTER));
     }
     break;
     case ST_MACRO_7:
     if (record->event.pressed) {
-	// 07858
-      SEND_STRING(SS_TAP(X_0) SS_DELAY(macro_delay) SS_TAP(X_7) SS_DELAY(macro_delay) SS_TAP(X_8) SS_DELAY(macro_delay) SS_TAP(X_5) SS_DELAY(macro_delay) SS_TAP(X_8));
+		// 07858
+      SEND_STRING(SS_TAP(X_0) SS_DELAY(50) SS_TAP(X_7) SS_DELAY(50) SS_TAP(X_8) SS_DELAY(50) SS_TAP(X_5) SS_DELAY(50) SS_TAP(X_8));
     }
     break;
     case ST_MACRO_8:
     if (record->event.pressed) {
-	// 05014144950
-      SEND_STRING(SS_TAP(X_0) SS_DELAY(macro_delay) SS_TAP(X_5) SS_DELAY(macro_delay) SS_TAP(X_0) SS_DELAY(macro_delay) SS_TAP(X_1) SS_DELAY(macro_delay) SS_TAP(X_4) SS_DELAY(macro_delay) SS_TAP(X_1) SS_DELAY(macro_delay) SS_TAP(X_4) SS_DELAY(macro_delay) SS_TAP(X_4) SS_DELAY(macro_delay) SS_TAP(X_9) SS_DELAY(macro_delay) SS_TAP(X_5) SS_DELAY(macro_delay) SS_TAP(X_0));
+		// 05014144950
+      SEND_STRING(SS_TAP(X_0) SS_DELAY(50) SS_TAP(X_5) SS_DELAY(50) SS_TAP(X_0) SS_DELAY(50) SS_TAP(X_1) SS_DELAY(50) SS_TAP(X_4) SS_DELAY(50) SS_TAP(X_1) SS_DELAY(50) SS_TAP(X_4) SS_DELAY(50) SS_TAP(X_4) SS_DELAY(50) SS_TAP(X_9) SS_DELAY(50) SS_TAP(X_5) SS_DELAY(50) SS_TAP(X_0));
     }
     break;
     case ST_MACRO_9:
     if (record->event.pressed) {
-	// home m F7
-      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(macro_delay) SS_TAP(X_M) SS_DELAY(macro_delay) SS_TAP(X_F7));
+		// home m F7
+      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(50) SS_TAP(X_M) SS_DELAY(50) SS_TAP(X_F7));
     }
     break;
     case ST_MACRO_10:
     if (record->event.pressed) {
-	// irpfmx
-      SEND_STRING(SS_TAP(X_I) SS_DELAY(macro_delay) SS_TAP(X_R) SS_DELAY(macro_delay) SS_TAP(X_P) SS_DELAY(macro_delay) SS_TAP(X_F) SS_DELAY(macro_delay) SS_TAP(X_M) SS_DELAY(macro_delay) SS_TAP(X_X));
+		// irpfmx
+      SEND_STRING(SS_TAP(X_I) SS_DELAY(50) SS_TAP(X_R) SS_DELAY(50) SS_TAP(X_P) SS_DELAY(50) SS_TAP(X_F) SS_DELAY(50) SS_TAP(X_M) SS_DELAY(50) SS_TAP(X_X));
     }
     break;
     case ST_MACRO_11:
     if (record->event.pressed) {
-	// {}
-      SEND_STRING(SS_LSFT(SS_TAP(X_LBRC)) SS_DELAY(macro_delay) SS_LSFT(SS_TAP(X_RBRC)) SS_DELAY(macro_delay) SS_TAP(X_LEFT));
+		// {}
+      SEND_STRING(SS_LSFT(SS_TAP(X_LBRC)) SS_DELAY(50) SS_LSFT(SS_TAP(X_RBRC)) SS_DELAY(50) SS_TAP(X_LEFT));
     }
     break;
     case ST_MACRO_12:
     if (record->event.pressed) {
-	// home m F8
-      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(macro_delay) SS_TAP(X_M) SS_DELAY(macro_delay) SS_TAP(X_F8));
+		// home m F8
+      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(50) SS_TAP(X_M) SS_DELAY(50) SS_TAP(X_F8));
     }
     break;
     case ST_MACRO_13:
     if (record->event.pressed) {
-	// home last F enter
-      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(macro_delay) SS_TAP(X_L) SS_DELAY(macro_delay) SS_TAP(X_A) SS_DELAY(macro_delay) SS_TAP(X_S) SS_DELAY(macro_delay) SS_TAP(X_T) SS_DELAY(macro_delay) SS_TAP(X_SPACE) SS_DELAY(macro_delay) SS_TAP(X_F)  SS_DELAY(macro_delay) SS_TAP(X_ENTER));
+		// home last F enter
+      SEND_STRING(SS_TAP(X_HOME) SS_DELAY(50) SS_TAP(X_L) SS_DELAY(50) SS_TAP(X_A) SS_DELAY(50) SS_TAP(X_S) SS_DELAY(50) SS_TAP(X_T) SS_DELAY(50) SS_TAP(X_SPACE) SS_DELAY(50) SS_TAP(X_F)  SS_DELAY(50) SS_TAP(X_ENTER));
     }
     break;
     case ST_MACRO_14:
     if (record->event.pressed) {
-	// ""
-      SEND_STRING(SS_LSFT(SS_TAP(X_QUOTE)) SS_DELAY(macro_delay) SS_TAP(X_SPACE) SS_DELAY(macro_delay) SS_LSFT(SS_TAP(X_QUOTE)) SS_DELAY(macro_delay) SS_TAP(X_SPACE) SS_DELAY(macro_delay) SS_TAP(X_LEFT));
+		// ""
+      SEND_STRING(SS_LSFT(SS_TAP(X_QUOTE)) SS_DELAY(50) SS_TAP(X_SPACE) SS_DELAY(50) SS_LSFT(SS_TAP(X_QUOTE)) SS_DELAY(50) SS_TAP(X_SPACE) SS_DELAY(50) SS_TAP(X_LEFT));
     }
     break;
 
@@ -245,6 +243,7 @@ unsigned short int macro_delay = 50;
   }
   return true;
 }
+
 
 
 
